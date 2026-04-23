@@ -21,7 +21,7 @@ if file and (message := st.chat_input("Type your message...")):
         df = pd.read_sql(f"SELECT * FROM {first_table}", conn)
         conn.close()
         os.unlink(tmp_path)
-    else: pd.read_csv(file)
+    else: df = pd.read_csv(file)
     agent = Agent(df, config={"llm": llm})
     st.chat_message("", avatar=("a.jpg")).write(message)
     with st.spinner("Give it a sec... or grab an RTX PRO 5000", show_time=True):
