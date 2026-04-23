@@ -1,0 +1,17 @@
+[server]
+enableStaticServing = true
+
+[[theme.fontFaces]]
+family = "a"
+url = "app/static/苦しみ.ttf"
+
+[theme]
+font = "a"
+headingFont = "a"
+codeFont = "a"
+codeTextColor="#ffffff"
+codeBackgroundColor="#000000"
+backgroundColor="#000000"
+secondaryBackgroundColor="#000000"
+primaryColor="#ffc3ce"
+textColor="#ffffff"
